@@ -12,11 +12,11 @@ Install the extension from the above Web Store link. By default the extension wi
 - The attempt to log the user off is best effort and assumes the user is not actively trying to block logout. It's precautionary and not guaranteed. The extension can be easily defeated with:
   - a [USB mouse jiggler](https://www.tomshardware.com/how-to/best-mouse-jiggler-methods) which simulates user mouse input.
   - another Chrome extension which [simulates user activity](https://developer.chrome.com/docs/extensions/reference/api/power#method-reportActivity) to avoid idleness.
-  - a [baboon trained to smash keys](https://media.gettyimages.com/id/712-54/video/medium-shot-baboon-pounding-on-laptop-keyboard.mp4?s=mp4-640x640-gi&k=20&c=_m-Fw23GBAcrQeiSQ63WxZbvPqXDbFEQP1O-vyRnKAU=).
+  - [a baboon](https://media.gettyimages.com/id/712-54/video/medium-shot-baboon-pounding-on-laptop-keyboard.mp4?s=mp4-640x640-gi&k=20&c=_m-Fw23GBAcrQeiSQ63WxZbvPqXDbFEQP1O-vyRnKAU=).
 
 ## Extension options
 Right click on the extension lock icon and choose Options to configure:
-- Number of idle seconds before locking (range 15 - 1209600). 1,209,600 is two weeks :-)
+- Number of idle seconds before locking (range 15 - 1209600). 1,209,600 seconds is two weeks :-)
 - URL to open to trigger the user logout. `https://accounts.google.com/Logout` is the default and will log the user out of Google accounts.
 - Whether the new tab opened to the logout URL should take focus.
 
@@ -28,3 +28,4 @@ Workspace, Cloud Identity and GCP admins can force install the extension for the
 1. Once you're happy with your options, click "Download policy" and save the file locally.
 1. [Force install the extension for your users](https://support.google.com/chrome/a/answer/6306504?hl=en).
 1. [Set policy for the app by uploading the file you downloaded above.](https://support.google.com/chrome/a/answer/6177447#custom)
+1. Consider using Context Aware Access or BeyondCorp Enterprise to enforce Chrome browser for users.
