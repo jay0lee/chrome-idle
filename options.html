@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chrome Idle Options</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+Idle seconds until lock occurs:
+<input type="text" size="10" id="lock_after_idle_seconds">
+<br><br>
+
+URL to open on lock:
+<input type="text" size="75" id="lock_url">
+<br><br>
+
+Should the new tab where the lock URL is opened takes focus?:
+<select id="lock_url_takes_focus">
+  <option value="true">Yes</option>
+  <option value="false">No</option>
+</select>
+<br><br>
+
+<div id="status"></div>
+<br>
+<button id="save">Save</button>
+<button id="defaults">Defaults</button>
+<button id="dlpolicy">Download Policy</button>
+
+<script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+	"type": "object",
+	"properties": {
+	    "lock_after_idle_seconds": {
+	        "title": "Idle seconds until lock occurs",
+	        "type": "integer"
+	    },
+	    "lock_url": {
+	        "title": "URL to open on lock",
+	        "type": "string"
+	    },
+	    "lock_url_takes_focus": {
+	        "title": "Whether the new tab where the lock URL is opened takes focus",
+	        "type": "boolean"
+	    }
+	}
+}

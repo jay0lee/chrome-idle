@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Idle",
+    "description": "Log a user out of Chrome on idle",
+    "version": "0.0.2",
+    "icons": {
+        "16": "logo/logo-16.png",
+        "48": "logo/logo-48.png",
+        "128": "logo/logo-128.png"
+    },
+    "minimum_chrome_version": "109",
+    "oauth2": {
+        "client_id": "159010835513-f7he61unj100eb9nj560ua57th905un5.apps.googleusercontent.com",
+        "scopes": ["email"]
+    },
+    "permissions": ["idle",
+                    "identity",
+                    "identity.email"],
+    "options_ui": {
+        "page": "options.html"
+    },
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "storage": {
+        "managed_schema": "schema.json"
+    }
+}
