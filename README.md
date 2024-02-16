@@ -8,7 +8,7 @@ Install the extension from the above Web Store link. By default the extension wi
 
 ## Known issues and limitations
 - Chrome OS is not supported. Admins can configure Chrome OS to lock on idle for managed users with Chrome policy.
-- A locked device (screensaver, sleep) is NOT considered idle. If your device locks quicker than this extension then this extension will do nothing.
+- A locked device (screensaver, sleep) is NOT considered idle. If your device locks quicker than this extension then this extension will do nothing. Some platforms do not require a password to wake from screensaver or sleep and this extension is not able to enforce this.
 - The attempt to log the user off is best effort and assumes the user is not actively trying to block logout. It's precautionary and not guaranteed. The extension can be easily defeated with:
   - a [USB mouse jiggler](https://www.tomshardware.com/how-to/best-mouse-jiggler-methods) which simulates user mouse input.
   - another Chrome extension which [simulates user activity](https://developer.chrome.com/docs/extensions/reference/api/power#method-reportActivity) to avoid idleness.
