@@ -14,7 +14,7 @@ Install the extension from above. By default the extension will log you out of C
 ## Extension options
 Right click on the extension lock icon and choose Options to configure:
 - Number of idle seconds before locking (range 15 - 1209600). 1,209,600 is two weeks :-)
-- URL to open to trigger the user logout. https://accounts.google.com/Logout is the default.
+- URL to open to trigger the user logout. `https://accounts.google.com/Logout` is the default and will log the user out of Google accounts.
 - Whether the new tab opened to the logout URL should take focus.
 
 ## Admin force install
